@@ -1,0 +1,6 @@
+# /bin/bash
+kill $(./ps aux | grep 'pProgram' | awk '{print $2}')
+kill $(./ps aux | grep 'pp.py' | awk '{print $2}')
+#kill $(ps aux | grep './eog' | awk '{print$2}')
+#pkill -f eog
+
