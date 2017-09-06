@@ -20,4 +20,4 @@ $sudo firewall-cmd --list-all
 [上述指令參考於此 ](http://blog.xuite.net/tolarku/blog/363801991)
 
 ### 使用方法
-B端先執行server, A再端執行client。B端將顯示 I get server message. A端將顯示 I get client message. 接著自動結束連線。
+A端先執行server, B再端執行client。B端將顯示 I get server message. A端將顯示 I get client message. 接著自動結束連線。
