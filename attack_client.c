@@ -69,7 +69,7 @@ int socket_client(char *ip, int port)
 int main(int argc, char *argv[])
 {
     //ip and port of server end
-    socket_client("192.168.65.99", 40000);
+    socket_client("192.168.65.68", 40000);
     
     return 0;
 }
