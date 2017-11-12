@@ -1,6 +1,6 @@
 # seProgram
 
-## 網路情境program
+## attack_client attack_server
 
 攻擊端:A 
 <br>
@@ -19,5 +19,13 @@ $sudo firewall-cmd --list-all
 
 [上述指令參考於此 ](http://blog.xuite.net/tolarku/blog/363801991)
 
-### 使用方法
-A端先執行server, B再端執行client。B端將顯示 I get server message. A端將顯示 I get client message. 接著自動結束連線。
+### 執行說明
+A 端先執行 attack_server, server 便會開始聽取來自網路的連線，確認是否有人要連接，接著 B 端執行 attack_client，與 A 端建立連線。A 端會送出 `I get server message.` B 端接收到後會顯示出來並向 A 端傳送 `I get client message.` A 端接收到後一樣會顯示在畫面上，接著便結束兩者的連線。
+
+## ransomware
+由 ransomware.c 編譯而成
+
+**執行後**
+- 將名為 file 的檔案壓縮成 zip 檔
+- 並設定壓縮密碼，密碼可在原始碼中查看
+- 最後刪除原檔 file
